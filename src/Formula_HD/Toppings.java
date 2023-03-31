@@ -5,11 +5,19 @@ public enum Toppings {
     PICKLED_CUCUMBER(9,1);
 
 
-    final int price;
-    final int dosa;
+  private   final int price;
+  private   final int dosa;
 
     Toppings(int price, int dosa) {
         this.price = price;
         this.dosa = dosa;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getDosa() {
+        return dosa;
     }
 }
